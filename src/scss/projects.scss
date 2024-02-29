@@ -1,0 +1,86 @@
+@import 'blocks/headerPage';
+@import 'blocks/footer';
+@import 'blocks/_global';
+@import 'blocks/_reset';
+@import 'blocks/_vars';
+
+.portfolio {
+    &__inner {
+        padding: 70px 80px;
+    }
+
+    &__title {
+        color: $black_title;
+        text-align: center;
+        font-family: Raleway;
+        font-size: 24px;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        width: 550px;
+        color: #999;
+        font-family: Raleway;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+        margin-bottom: 50px;
+        text-align: center;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+
+}
+
+@media(max-width:1070px) {
+    .portfolio {
+        &__img {
+            width: 260px;
+            height: 300px;
+        }
+
+        &__inner {
+            padding: 70px 0;
+        }
+    }
+}
+
+@media(max-width:560px) {
+    .headerPage {
+        &__menu {
+            display: none;
+        }
+
+        &__inner {
+            justify-content: space-around;
+            padding: 0;
+        }
+
+    }
+
+    .portfolio {
+        &__text {
+            max-width: 200px;
+        }
+
+        &__title {
+            font-size: 20px;
+        }
+
+        &__img {
+            max-width: 350px;
+            padding: 0 5px;
+        }
+    }
+}

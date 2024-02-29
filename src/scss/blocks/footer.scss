@@ -1,0 +1,155 @@
+@import 'blocks/_vars';
+
+.footer {
+    &__wrapper {
+        background-color: $black;
+        padding: 40px 80px 70px 80px;
+    }
+
+    &__inner {
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 60px;
+
+    }
+
+    &__logo-inner {
+        margin-bottom: 53px;
+
+    }
+
+
+
+    &__title-about {
+        color: $white;
+        font-family: Raleway;
+        font-size: 18px;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    &__text-about {
+        color: $color_text;
+        font-family: Raleway;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 22px;
+        width: 344px;
+    }
+
+    &__rigth {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 70px;
+    }
+
+    &__menu-title {
+        color: $white;
+        font-family: Raleway;
+        font-size: 18px;
+        font-weight: 900;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    &__menu-title::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 3px;
+        background-color: $orange;
+        top: 40px;
+        left: 0;
+    }
+
+    &__menu-item {
+        margin-bottom: 10px;
+    }
+
+    &__link {
+        color: $white;
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    &__link:hover {
+        color: $orange_hover;
+        text-decoration-line: underline;
+    }
+
+
+
+    &__services-item {
+        margin-bottom: 10px;
+    }
+
+
+    &__social-text {
+        color: $color_text;
+        font-family: Raleway;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 22px;
+        width: 265px;
+        margin-bottom: 35px;
+    }
+
+    &__social-icons {
+        display: flex;
+    }
+
+    &__social-icon {
+        margin-right: 15px;
+        border-radius: 0px 5px;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        background: rgba(0, 0, 0, 0.00);
+        padding: 5px 15px;
+
+    }
+
+    &__social-icon:hover {
+        background-color: $orange_hover;
+    }
+}
+
+@media (max-width:1163px) {
+    .footer {
+        &__inner {
+            justify-content: center;
+            gap: 53px;
+        }
+    }
+}
+
+@media (max-width:1163px) {
+    .footer {
+        &__inner {
+            justify-content: flex-start;
+            gap: 53px;
+        }
+    }
+}
+
+@media (max-width:420px) {
+    .footer {
+        &__wrapper {
+
+            padding: 40px 37px 70px 37px;
+        }
+
+        &__text-about {
+            width: 280px;
+        }
+
+        &__logo-inner {
+            margin-bottom: 20px;
+        }
+    }
+}

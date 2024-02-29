@@ -1,0 +1,129 @@
+@import 'blocks/headerPage';
+@import 'blocks/footer';
+@import 'blocks/_global';
+@import 'blocks/_reset';
+@import 'blocks/_vars';
+
+.member {
+    &__inner {
+        padding: 42px 80px;
+        display: flex;
+
+    }
+
+    &__info {
+        width: 196px;
+        height: 166px;
+        border-radius: 0px 5px;
+        background: #FAFAFA;
+        padding: 26px 22px 0px 22px;
+    }
+
+    &__info-title {
+        color: #333;
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 26px;
+
+    }
+
+    &__info-link {
+        color: #666;
+        border-bottom: 1px solid #ffffff00;
+        font-family: Raleway;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        display: inline-block;
+        margin-bottom: 21px;
+    }
+
+    &__info-link:hover {
+        color: #efa00d;
+        border-bottom: 1px solid #efa00d;
+    }
+
+    &__items {
+        margin-left: 58px;
+    }
+
+    &__title {
+        color: #333;
+        font-family: Raleway;
+        font-size: 30px;
+        font-weight: 800;
+        margin-left: 58px;
+        margin-bottom: 21px;
+    }
+
+    &__item-block {
+        display: flex;
+        margin-bottom: 15px;
+
+    }
+
+    &__item-box {
+        max-width: 620px;
+        margin-left: 48px;
+    }
+
+    &__item-title {
+        color: #F88500;
+        font-family: Raleway;
+        font-size: 22px;
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
+
+    &__item-text {
+        color: #333;
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27px;
+
+    }
+
+}
+
+@media(max-width:760px) {
+    .member {
+        &__inner {
+            display: block;
+            padding: 42px 10px;
+        }
+
+
+
+        &__wrap-info {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__title {
+            text-align: center;
+            font-size: 27px;
+            margin-left: 0;
+            margin-top: 35px;
+        }
+
+        &__item-box {
+            margin-left: 0;
+            width: 100%;
+        }
+
+        &__item-text {
+            font-size: 14px;
+        }
+
+        &__item-title {
+            font-size: 18px;
+        }
+
+        &__items {
+            margin-left: 0;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;700&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&family=Roboto+Mono:wght@100;200;300;400;700&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/feedback.css">
+    <title>mia-feedback</title>
+</head>
+
+<body>
+    @@include('blocks/headerPage.html')
+    <div class="wrapper">
+        <main>
+            <section class="feedback">
+                <div class="container">
+                    <div class="feedback__inner">
+                        <h1 class="feedback__title">Обратная связь</h1>
+                        <p class="feedback__text">
+                            Задайте нам любой вопрос, напишите или сделайте заказ.
+                            Наши менеджеры ответят вам в ближайшее время.
+                        </p>
+                        <div class="feedback__input-box">
+                            <form class="feedback__input-form">
+                                <input class="feedback__input" type="text" placeholder="имя">
+                                <input class="feedback__input" type="tel" placeholder="телефон">
+                                <input class="feedback__input" type="text" placeholder="Ваше сообщение...">
+                                <a class="feedback__button-link">отправить сообщение</a>
+                            </form>
+                        </div>
+                        <div class="massege">
+                            <p class="massege__text">Ваше сообщение доставлено.Мы свяжемся с Вами в самое ближайшее
+                                время.Спасибо,что выбрали нас.</p>
+                        </div>
+                        <div class="lds-roller">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contacts">
+                <div class="container">
+                    <div class="contacts__wrap">
+                        <div class="contacts__inner">
+                            <h2 class="contacts__title">Наши контакты</h2>
+                            <p class="contacts__adress">г. Москва, пр. Скулатова, 224, оф 3.</p>
+                            <p class="contacts__phone">+7 (499) 246-75-32</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+    @@include('blocks/footer.html')
+    <script src="./js/blog.bundle.js"></script>
+</body>
+
+</html>
